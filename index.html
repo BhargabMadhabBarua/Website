@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Burhi Thakurani Mandir</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Noto Sans',sans-serif;background:#f5f5f5;color:#333}
+
+/* HERO */
+header{
+  background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),url('temple1.jpg');
+  background-size:cover;
+  background-position:center;
+  color:#fff;
+  text-align:center;
+  padding:100px 20px;
+}
+header h1{font-size:40px}
+header p{margin-top:10px;font-size:18px}
+
+/* NAVBAR */
+nav{background:#8B0000;position:sticky;top:0}
+.menu{display:flex;justify-content:center;flex-wrap:wrap}
+.menu a,.dropdown{
+  color:#fff;
+  padding:14px 18px;
+  text-decoration:none;
+  cursor:pointer;
+}
+.menu a:hover,.dropdown:hover{background:#a52a2a}
+
+/* DROPDOWN */
+.dropdown{position:relative}
+.dropdown-content{
+  display:none;
+  position:absolute;
+  background:#8B0000;
+  min-width:150px;
+}
+.dropdown-content a{
+  display:block;
+  padding:10px;
+}
+.dropdown:hover .dropdown-content{display:block}
+
+/* SECTION */
+section{padding:40px 20px;max-width:1000px;margin:auto}
+h2{color:#8B0000;margin-bottom:10px}
+
+/* CARD */
+.card{
+  background:#fff;
+  padding:20px;
+  margin:15px 0;
+  border-radius:10px;
+  box-shadow:0 2px 8px rgba(0,0,0,.1);
+}
+
+/* GALLERY */
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:10px;
+}
+.gallery img{
+  width:100%;
+  border-radius:8px;
+}
+
+/* VIDEO */
+iframe{
+  width:100%;
+  height:220px;
+  border:none;
+  border-radius:8px;
+  margin-top:10px;
+}
+
+/* FOOTER */
+footer{
+  background:#222;
+  color:#fff;
+  text-align:center;
+  padding:15px;
+  margin-top:30px;
+}
+
+@media(max-width:600px){
+  header h1{font-size:26px}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Burhi Thakurani Mandir</h1>
+  <p>A Sacred Place of Devotion</p>
+  <p>ভক্তি আৰু পৰম্পৰাৰ পৱিত্ৰ স্থান</p>
+</header>
+
+<nav>
+  <div class="menu">
+    <a href="#home">Home</a>
+    <a href="#history">History</a>
+
+    <div class="dropdown">Puja
+      <div class="dropdown-content">
+        <a href="#daily">Daily Puja</a>
+        <a href="#festival">Festivals</a>
+      </div>
+    </div>
+
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+
+<section id="home">
+  <div class="card">
+    <h2>Welcome / স্বাগতম</h2>
+    <p>Burhi Thakurani Mandir is a sacred temple known for its tradition and devotion.</p>
+    <p>বুঢ়ী ঠাকুৰাণী মন্দিৰ এখন পৱিত্ৰ ধৰ্মীয় স্থান যি বহুদিন ধৰি ভক্তিৰ কেন্দ্ৰ।</p>
+  </div>
+</section>
+
+<section id="history">
+  <div class="card">
+    <h2>History / ইতিহাস</h2>
+    <p>Write your real temple history here.</p>
+    <p>ইয়াত আপোনাৰ মন্দিৰৰ সম্পূৰ্ণ ইতিহাস লিখক।</p>
+  </div>
+</section>
+
+<section id="daily">
+  <div class="card">
+    <h2>Daily Puja / দৈনিক পূজা</h2>
+    <p>Daily rituals and worship are performed.</p>
+    <p>প্ৰতিদিনে পূজা অনুষ্ঠিত হয়।</p>
+  </div>
+</section>
+
+<section id="festival">
+  <div class="card">
+    <h2>Festivals / উৎসৱ</h2>
+    <p>Durga Puja and other festivals are celebrated.</p>
+    <p>দুৰ্গা পূজা আৰু অন্যান্য উৎসৱ উদযাপন কৰা হয়।</p>
+  </div>
+</section>
+
+<section id="gallery">
+  <h2>Gallery / গ্যালাৰী</h2>
+  <div class="gallery">
+    <img src="temple1.jpg">
+    <img src="temple2.jpg">
+    <img src="temple3.jpg">
+  </div>
+
+  <h2 style="margin-top:20px">Videos / ভিডিঅ'</h2>
+  <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID"></iframe>
+</section>
+
+<section id="contact">
+  <div class="card">
+    <h2>Contact / যোগাযোগ</h2>
+    <p>Address: [Your Location]</p>
+    <p>Phone: [Your Phone]</p>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Burhi Thakurani Mandir</p>
+</footer>
+
+</body>
+</html>
